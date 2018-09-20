@@ -1,0 +1,8 @@
+nExp = 1e5;
+p = 0.5;
+k = 6;
+nLan = 15;
+
+lancamentos = rand(nLan, nExp)>p;
+sucessos = sum(lancamentos)==k;
+probSimulacao = sum(sucessos)/nExp
